@@ -14,3 +14,8 @@
 serving_dir
 .ipynb_checkpoints/
 !week_6_stream_processing/avro_example/data/rides.csv
+*.csv
+Anaconda3-2024.10-1-Linux-x86_64.sh
+.code-workspace/
+.venv/
+*.sh

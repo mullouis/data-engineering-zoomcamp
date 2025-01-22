@@ -10,14 +10,14 @@ terraform {
 provider "google" {
 # Credentials only needs to be set if you do not have the GOOGLE_APPLICATION_CREDENTIALS set
 #  credentials = 
-  project = "louis-playground"
-  region  = "us-central1"
+  project = "prj"
+  region  = "region"
 }
 
 
 
 resource "google_storage_bucket" "data-lake-bucket" {
-  name          = "data-eng-zoomcamp-01012025-bucket"
+  name          = "bucket"
   location      = "US"
 
   # Optional, but recommended settings:
@@ -42,7 +42,7 @@ resource "google_storage_bucket" "data-lake-bucket" {
 
 
 resource "google_bigquery_dataset" "dataset" {
-  dataset_id = "data-eng-zoomcamp-01012025-dataset"
-  project    = "louis-playground"
-  location   = "US"
+  dataset_id = "dataset"
+  project    = "prj"
+  location   = "loc"
 }
